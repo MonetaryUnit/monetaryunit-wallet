@@ -1,0 +1,23 @@
+monetaryunity vždy so sebou vo svojom vrecku. Jednoduché a rýchle platby pomocou QR kódov. Pre obchodníkov ponúka spoľahlivé a okamžité prijímanie platieb. monetaryunit Wallet je prvá mobilná monetaryunit aplikácia a preukázateľne aj najbezpečnejšia.
+
+FUNKCIE:
+
+• Nie je potrebná žiadna registrácia ani žiadny účet.
+• Zobrazenie zostatku monetaryunitov v DGC alebo mDGC.
+• Prepočet hodnoty monetaryunitov do viacerých cudzích mien.
+• Posielanie a prijímanie monetaryunitov pomocou NFC, QR kódov alebo monetaryunit adries.
+• Adresár pre často používané monetaryunit adresy.
+• V offline režime je platba možná aj cez Bluetooth.
+• Notifikácie v stavovej lište pri prijatí monetaryunitov.
+• Widget s celkovým zostatkom.
+
+Viac informácií o Bitcoine
+http://monetaryunit.org/
+
+Ak chcete prispieť do projektu Bitcoin Wallet nájdete ho na adrese
+https://github.com/MonetaryUnit/monetaryunit-wallet
+
+
+Licencia: GPLv3
+Použitie len na vlastné riziko!
+http://www.gnu.org/licenses/gpl-3.0.en.html

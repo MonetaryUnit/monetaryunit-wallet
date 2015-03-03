@@ -1,0 +1,21 @@
+Dengan aplikasi ini Anda selalu mempunyai MonetaryUnit dengan Anda, dalam saku Anda! Anda dapat mengirim pembayaran hanya dengan memindai kode-QR atau mendekatkan dua ponsel bersama (NFC). MonetaryUnit Wallet dirancang untuk mudah digunakan dan diandalkan, sementara juga menjadi lebih aman dan cepat.
+
+FITUR:
+
+• Tidak diperlukan server awan atau layanan web! Dompet ini benar-benar peer ke peer.
+• Tampilkan saldo dompet dalam MonetaryUnit dan mata uang lainnya.
+• Mengirim dan menerima MonetaryUnit via NFC, kode-QR atau Tautan MonetaryUnit.
+• Buku alamat untuk alamat penggunaan MonetaryUnit secara reguler.
+• Masukkan transaksi saat offline, akan dilaksanakan ketika online.
+• Notifikasi sistem untuk konektivitas MonetaryUnit dan menerima koin.
+• Widget Apl untuk saldo MonetaryUnit.
+
+Anda dapat mengetahui lebih mengenai MonetaryUnit di
+http://monetaryunit.org/
+
+Jika Anda ingin berkontribusi kepada MonetaryUnit Wallet, proyeknya berada di
+https://github.com/MonetaryUnit
+
+Lisensi: GPLv3
+Gunakan dengan resiko Anda!
+http://www.gnu.org/licenses/gpl-3.0.en.html

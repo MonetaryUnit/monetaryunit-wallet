@@ -1,0 +1,20 @@
+Dit is een standalone MonetaryUnit Wallet voor uw Android apparaat. U kan direct MonetaryUnits versturen tussen telefoons door simpelweg de QR-code te scannen die de app weergeeft of via NFC (Near Field Communication).
+
+FUNCTIES:
+
+• Weergeven van het wallet saldo in MonetaryUnit en verschillende andere valuta.
+• Verzenden en ontvangen van MonetaryUnit via NFC, QR-codes of MonetaryUnit URLs.
+• Adresboek voor veelgebruikte MonetaryUnit adressen.
+• Transacties ingeven tijdens het offline zijn, deze zullen worden uitgevoerd wanneer u online komt.
+• Systeem melding over MonetaryUnit connectiviteit en ontvangen MonetaryUnits.
+• Widget voor MonetaryUnit saldo.
+
+Voor meer informatie over MonetaryUnit kunt u terecht op
+http://monetaryunit.org/
+
+Als u een bijdrage wil leveren aan MonetaryUnit Wallet, het project is te vinden op
+https://github.com/MonetaryUnit
+
+Licentie: GPLv3
+Gebruik op eigen risico!
+http://www.gnu.org/licenses/gpl-3.0.en.html

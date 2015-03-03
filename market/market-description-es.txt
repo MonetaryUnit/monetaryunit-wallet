@@ -1,0 +1,23 @@
+Ten tus MonetaryUnits siempre contigo, en tu bolsillo! Paga rápidamente escaneando un código QR. Como comerciante, recibes los pagos de forma fiable e instantáneamente. MonetaryUnit Wallet es la primera MonetaryUnit app para movil, e incluso la mas segura!
+
+CARACTERÍSTICAS:
+
+• ¡No requiere registro, servidor en la nube o servicio web! Este monedero es auténticamente entre pares (peer-to-peer).
+• Muestra la cantidad de MonetaryUnits en BTC y mBTC
+• Conversión a divisas nacionales.
+• Envío y recepción de MonetaryUnits vía NFC, códigos QR o URL de MonetaryUnit.
+• Libreta de direcciones para guardar las direcciones MonetaryUnit más utilizadas.
+• Cuando no tengas conexión, puedes seguir pagando via Bluetooth.
+• Notificación al recibir monedas.
+• Widget para el saldo de MonetaryUnits.
+
+Puedes descubrir más sobre MonetaryUnit en
+http://monetaryunit.org/
+
+Si quieres contribuir a MonetaryUnit Wallet, el proyecto se encuentra en
+https://github.com/MonetaryUnit
+
+
+Licencia: GPLv3
+¡Úsalo bajo tu propio riesgo!
+http://www.gnu.org/licenses/gpl-3.0.en.html

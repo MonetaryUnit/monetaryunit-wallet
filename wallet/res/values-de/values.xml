@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+	<string-array name="preferences_precision_labels">
+		<item>MUE, 8 Dezimalen</item>
+		<item>MUE, 6 Dezimalen</item>
+		<item>MUE, 4 Dezimalen</item>
+		<item>mMUE, 2 Dezimalen</item>
+    </string-array>
+</resources>

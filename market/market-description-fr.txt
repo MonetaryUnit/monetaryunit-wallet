@@ -1,0 +1,23 @@
+Ayez vos MonetaryUnits toujours avec vous dans votre poche ! Payez rapidement en numérisant un code-QR. En tant que marchant vous recevez les paiements de manière fiable et instantanée. MonetaryUnit Wallet est la première appli MonetaryUnit mobile et sans doute aussi la plus sécuritaire !
+
+FONCTIONS :
+
+• Pas d'inscription, de service Web ou de nuage de nécessaire ! Ce portefeuille est décentralisé et de pair-à-pair.
+• Affichage du montant de MonetaryUnit en MUE et mMUE.
+• Conversion de et vers des devises nationales.
+• Envoi et réception des MonetaryUnit via NFC, codes QR ou des URLs MonetaryUnit.
+• Carnet d'adresse pour les adresses MonetaryUnit utilisées régulièrement.
+• Quand vous êtes hors-ligne vous pouvez quand même payez via Bluetooth.
+• Notification du système pour les pièces reçues.
+• Widget affichant le solde monetaryunit.
+
+
+Vous pouvez en apprendre plus au sujet de MonetaryUnit sur
+http://monetaryunit.org/
+
+Si vous voulez contribuer à MonetaryUnit Wallet, le projet se trouve sur
+https://github.com/MonetaryUnit
+
+Licence : GPLv3
+Utiliser à vos propres risques !
+http://www.gnu.org/licenses/gpl-3.0.fr.html
