@@ -15,3 +15,6 @@ gen-external-apklibs
 gen/
 .DS_Store
 *.apk
+/wallet/proguard_logs/dump.txt
+/wallet/proguard_logs/seeds.txt
+/wallet/proguard_logs/usage.txt
