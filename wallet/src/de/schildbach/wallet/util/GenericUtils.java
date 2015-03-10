@@ -17,18 +17,18 @@
 
 package de.schildbach.wallet.util;
 
+import android.view.View;
+import android.widget.TextView;
+
+import com.google.bitcoin.core.CoinDefinition;
+import com.google.bitcoin.core.NetworkParameters;
+
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Locale;
 
 import javax.annotation.Nonnull;
-
-import android.view.View;
-import android.widget.TextView;
-
-import com.google.bitcoin.core.CoinDefinition;
-import com.google.bitcoin.core.NetworkParameters;
 
 import de.schildbach.wallet.Constants;
 
@@ -38,8 +38,8 @@ import de.schildbach.wallet.Constants;
 public class GenericUtils
 {
 
-    public static final BigInteger ONE_BTCreal = new BigInteger("100000000", 10);
-    public static final BigInteger ONE_MBTCreal = new BigInteger("100000", 10);
+    public static final BigInteger ONE_BTCreal = new BigInteger("100000", 10);
+    public static final BigInteger ONE_MBTCreal = new BigInteger("1000", 10);
 
 	public static final BigInteger ONE_BTC = CoinDefinition.COIN;//new BigInteger("100000000", 10);
 	public static final BigInteger ONE_MBTC = CoinDefinition.mCOIN;// new BigInteger("100000", 10);

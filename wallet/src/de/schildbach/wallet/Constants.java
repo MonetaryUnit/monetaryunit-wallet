@@ -17,17 +17,18 @@
 
 package de.schildbach.wallet;
 
-import java.io.File;
-import java.nio.charset.Charset;
-
 import android.os.Build;
 import android.os.Environment;
 import android.text.format.DateUtils;
 
+import com.google.bitcoin.core.CoinDefinition;
 import com.google.bitcoin.core.NetworkParameters;
 import com.google.bitcoin.params.MainNetParams;
 import com.google.bitcoin.params.TestNet3Params;
-import com.google.bitcoin.core.CoinDefinition;
+
+import java.io.File;
+import java.nio.charset.Charset;
+
 import ua.monetaryunit.wallet.R;
 
 
@@ -106,12 +107,12 @@ public class Constants
 
 	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
 
-    public static final String FORKED_FROM_SOURCE = "based on bitcoin-wallet 3.46\n";
+    public static final String FORKED_FROM_SOURCE = "based on bitcoin-wallet\n";
     public static final String FORKED_FROM_SOURCE_BITCOINJ = "based on bitcoinj 0.12\n";
 
-	public static final String SOURCE_URL = "https://github.com/MonetaryUnit/" + CoinDefinition.coinInternalName.toLowerCase() + "-wallet";
+	public static final String SOURCE_URL = "https://github.com/MonetaryUnit/monetaryunit-wallet";
 	public static final String BINARY_URL = "https://github.com/MonetaryUnit/";
-	public static final String CREDITS_BITCOINJ_URL = "https://github.com/MonetaryUnit/" + CoinDefinition.coinInternalName.toLowerCase() + "j";
+	public static final String CREDITS_BITCOINJ_URL = "https://github.com/MonetaryUnit/monetaryunitj";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
     public static final String CREDITS_WEBSITE_URL = "http://monetaryunit.org/";
     public static final String CREDITS_FORUM_URL = "http://mue.club/";

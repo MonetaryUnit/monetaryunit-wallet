@@ -2,18 +2,22 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
 	<PreferenceCategory android:title="@string/where_to_buy_title" >
-        <!--<Preference-->
-                <!--android:key="exchange_02"-->
-                <!--android:summary="https://www.vaultofsatoshi.com/orderbook"-->
-                <!--android:title="Vault Of Satoshi [USD, CAD]" />-->
-        <!--<Preference-->
-                <!--android:key="exchange_03"-->
-                <!--android:summary="https://coinmkt.com"-->
-                <!--android:title="CoinMKT [USD]" />-->
         <Preference
-                android:key="exchange_01"
-                android:summary="https://bleutrade.com/exchange/MUE/USD"
-                android:title="bleutrade.com [USD]" />
+            android:key="exchange_00"
+            android:summary="https://bleutrade.com/exchange/9237"
+            android:title="bleutrade.com" />
+        <Preference
+            android:key="exchange_01"
+            android:summary="https://btcpool.exchange/market?pair=MUE/BTC"
+            android:title="btcpool.exchange" />
+        <Preference
+            android:key="exchange_02"
+            android:summary="https://www.cryptopia.co.nz/Exchange/1155"
+            android:title="cryptopia.co.nz" />
+        <Preference
+            android:key="exchange_03"
+            android:summary="https://askcoin.net/ref/3912"
+            android:title="askcoin.net" />
 <!--        <Preference
                 android:key="exchange_07"
                 android:summary="http://liliontransfer.org/?cms_www=deklaracja&amp;waluta_od=USD&amp;waluta_do=MUE"

@@ -9,7 +9,7 @@
 			android:summary="© 2011-2014, Andreas Schildbach\n© 2013-2014, HashEngineering Solutions\n© 2014-2015, MonetaryUnit Developers"
 			android:title="Copyright" />
         <Preference
-                android:summary="Version 0.8.3.15 and above"
+                android:summary="Version 1.0.0 and above"
                 android:title="MonetaryUnit Compatibility" />
 		<Preference
 			android:key="about_license"
@@ -17,10 +17,10 @@
 		<Preference
 			android:key="about_source"
 			android:title="Source Code" />
-		<Preference
-			android:key="about_market_app"
-			android:summary="@string/about_market_app_summary"
-			android:title="@string/about_market_app_title" />
+		<!--<Preference-->
+			<!--android:key="about_market_app"-->
+			<!--android:summary="@string/about_market_app_summary"-->
+			<!--android:title="@string/about_market_app_title" />-->
 		<!--Preference
 			android:key="about_credits_icon"
 			android:title="@string/about_credits_icon_title" /-->
@@ -47,9 +47,9 @@
 			android:key="about_author_googleplus"
 			android:summary="+Andreas Schildbach"
 			android:title="@string/about_author_googleplus_title" /-->
-		<Preference
-			android:key="about_market_publisher"
-			android:title="@string/about_credits_market_publisher_title" />
+		<!--<Preference-->
+			<!--android:key="about_market_publisher"-->
+			<!--android:title="@string/about_credits_market_publisher_title" />-->
 		<Preference android:key="about_credits_bitcoinj" />
 		<Preference
 			android:key="about_credits_zxing"

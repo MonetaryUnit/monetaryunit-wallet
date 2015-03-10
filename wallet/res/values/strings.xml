@@ -38,7 +38,7 @@
 	<string name="wallet_transactions_context_show_qr_title">Show QR code</string>
     <string name="wallet_transactions_context_browse">Explorer</string>
     <string name="wallet_transactions_context_show_transaction_title">Transaction details</string>
-	<string name="wallet_options_backup">Back up Keys</string>
+	<string name="wallet_options_backup">Backup/Restore Keys</string>
 	<string name="wallet_options_safety">Safety notes</string>
 	<string name="wallet_options_donate">Tip / Donate</string>
 	<string name="wallet_donate_address_label">Donation for MonetaryUnit Wallet</string>
@@ -234,7 +234,7 @@
 	<string name="about_community_googleplus_title">Google+ Community</string>
 	<string name="about_community_googleplus_summary">Discussions about the app</string>
 
-	<string name="about_author_twitter_title">Author at Twitter</string>
+	<string name="about_author_twitter_title">MonetaryUnit Twitter</string>
 	<string name="about_author_googleplus_title">Author at Google+</string>
 	<string name="about_market_app_title">Google Play Page</string>
 	<string name="about_market_app_summary">Review or rate the app</string>

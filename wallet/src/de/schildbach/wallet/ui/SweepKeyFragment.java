@@ -2,11 +2,16 @@ package de.schildbach.wallet.ui;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.*;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.database.Cursor;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.*;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
@@ -17,16 +22,18 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import com.actionbarsherlock.app.SherlockFragment;
-import com.google.bitcoin.core.*;
+import com.google.bitcoin.core.Address;
+import com.google.bitcoin.core.ECKey;
+import com.google.bitcoin.core.Sha256Hash;
+import com.google.bitcoin.core.Transaction;
+import com.google.bitcoin.core.TransactionConfidence;
+import com.google.bitcoin.core.TransactionInput;
+import com.google.bitcoin.core.TransactionOutPoint;
+import com.google.bitcoin.core.Wallet;
 import com.google.bitcoin.script.Script;
-import de.schildbach.wallet.*;
-import de.schildbach.wallet.service.BlockchainService;
-import de.schildbach.wallet.service.BlockchainServiceImpl;
-import de.schildbach.wallet.sweep.SweepHelper;
-import de.schildbach.wallet.sweep.UnspentOutput;
-import de.schildbach.wallet.util.GenericUtils;
-import de.schildbach.wallet.util.Io;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,8 +48,22 @@ import java.io.Reader;
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
+import de.schildbach.wallet.Configuration;
+import de.schildbach.wallet.Constants;
+//import de.schildbach.wallet.ExchangeRatesProvider;
+import de.schildbach.wallet.WalletApplication;
+import de.schildbach.wallet.service.BlockchainService;
+import de.schildbach.wallet.service.BlockchainServiceImpl;
+import de.schildbach.wallet.sweep.SweepHelper;
+import de.schildbach.wallet.sweep.UnspentOutput;
+import de.schildbach.wallet.util.GenericUtils;
+import de.schildbach.wallet.util.Io;
 import ua.monetaryunit.wallet.R;
 
 /**
@@ -78,8 +99,8 @@ public class SweepKeyFragment extends SherlockFragment {
 
     //chain urls
     private List<String> blockchainUrls = Arrays.asList(
-            "http://104.131.87.192:3000/api/addr/%s/utxo/",
-            "http://104.131.87.192:3000/api/addr/%s/utxo/" //need an alternate
+            "http://104.236.152.29/api/addr/%s/utxo",
+            "http://104.131.87.192:3000/api/addr/%s/utxo" //need an alternate
             //"https://chain.so/api/v2/lite/unspent/%s"
     );
 
@@ -298,14 +319,14 @@ public class SweepKeyFragment extends SherlockFragment {
         @Override
         public void onLoadFinished(final Loader<Cursor> loader, final Cursor data)
         {
-            if (data != null && data.getCount() > 0)
-            {
-                data.moveToFirst();
-                final ExchangeRatesProvider.ExchangeRate exchangeRate = ExchangeRatesProvider.getExchangeRate(data);
-
-                if (state == State.INPUT)
-                    amountCalculatorLink.setExchangeRate(exchangeRate);
-            }
+//            if (data != null && data.getCount() > 0)
+//            {
+//                data.moveToFirst();
+//                final ExchangeRatesProvider.ExchangeRate exchangeRate = ExchangeRatesProvider.getExchangeRate(data);
+//
+//                if (state == State.INPUT)
+//                    amountCalculatorLink.setExchangeRate(exchangeRate);
+//            }
         }
 
         @Override
@@ -583,7 +604,7 @@ public class SweepKeyFragment extends SherlockFragment {
 
                     // pass JSON content to the parser and accept it's
                     // result output as ours
-                    result = parseUnspentJSON_blockr(content.toString());
+                    result = parseUnspentJSON_insight(content.toString());
                 }
                 else
                 {
@@ -611,19 +632,48 @@ public class SweepKeyFragment extends SherlockFragment {
             return result;
         }
 
+        private Integer parseUnspentJSON_insight (String doc) {
+            try
+            {
+                final JSONArray unspentJson = new JSONArray(doc);
+
+                if(unspentJson.length() <= 0)
+                    return 0;
+
+                for (int i = 0 ; i < unspentJson.length(); i++)
+                {
+                    JSONObject output = unspentJson.getJSONObject(i);
+                    UnspentOutput out = new UnspentOutput(
+                            output.getString("txid"),
+                            output.getInt("vout"),
+                            output.getString("scriptPubKey"),
+                            BigInteger.valueOf((long)(Double.parseDouble(String.format("%.05f", output.getDouble("amount")).replace(",", "."))) *100000),
+                            output.getInt("confirmations")
+                    );
+                    unspentOutputs.add(out);
+                }
+            } catch (JSONException e)
+            {
+                log.debug("Error while reading the JSON response");
+                return -1;
+            }
+
+            return 1;
+        }
+
         private Integer parseUnspentJSON_blockr (String doc) {
             try
             {
                 final JSONObject json = new JSONObject(doc);
 
                 // json should validate itself, otherwise we do not trust it.
-                String success = json.getString("status");
+//                String success = json.getString("status");
+//
+//                if (!success.equals(success))
+//                    return -1;
 
-                if (!success.equals(success))
-                    return -1;
-
-                JSONObject dataJson = json.getJSONObject("data");
-                JSONArray unspentJson = dataJson.getJSONArray("unspent");
+                JSONObject dataJson = json.getJSONObject("");
+                JSONArray unspentJson = dataJson.getJSONArray("amount");
 
                 // if there are no unspent outputs, balance is 0
                 // and we have nothing to sweep
@@ -651,6 +701,7 @@ public class SweepKeyFragment extends SherlockFragment {
             return 1;
         }
     }
+
     private Integer parseUnspentJSON_abe (String doc) {
         try
         {
