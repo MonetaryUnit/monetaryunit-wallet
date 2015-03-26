@@ -1,3 +1,5 @@
+[Screenshot](http://i.imgur.com/4R2aIuvl.jpg)
+
 
 Welcome to _MonetaryUnit Wallet_, a standalone MonetaryUnit payment app for your Android device!
 
@@ -16,7 +18,7 @@ This project contains several sub-projects:
 
 You can build all sub-projects at once using Maven:
 
-`mvn clean install -DskipTests`
+`mvn clean package -DskipTests`
 
 Big thanks to HashEngineering for their work on Quarkcoin-wallet and QuarkcoinJ
 
