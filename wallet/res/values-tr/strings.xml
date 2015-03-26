@@ -31,7 +31,7 @@
 
 	<string name="wallet_transactions_fragment_empty_text_received">Şimdiye kadar hiçbir MonetaryUnit alınmadı</string>
 	<string name="wallet_transactions_fragment_empty_text_sent">Şimdiye kadar hiçbir MonetaryUnit gönderilmedi</string>
-	<string name="wallet_transactions_fragment_empty_text_howto">Bitcoin nasıl elde edilir?\n\nGeleneksel parayla alabilir,\nmal veya hizmet satabilir veya\nçalışarak kazanabilirsiniz.</string>
+	<string name="wallet_transactions_fragment_empty_text_howto">MonetaryUnit nasıl elde edilir?\n\nGeleneksel parayla alabilir,\nmal veya hizmet satabilir veya\nçalışarak kazanabilirsiniz.</string>
 	<string name="wallet_transactions_row_warning_backup">Tebrikler, ilk ödemenizi almış bulunuyorsunuz! Kayba karşı korunmak için &lt;u&gt;cüzdanınızı yedeklediniz mi&lt;/u&gt;?</string>
 
 	<string name="wallet_transactions_fragment_coinbase">oluşturulan</string>
@@ -54,8 +54,8 @@
 	<string name="wallet_version_dialog_button_binary">İndir</string>
 	<string name="wallet_old_sdk_dialog_title">Android sürümü eski</string>
 
-	<string name="wallet_old_sdk_dialog_message">Gelecek MonetaryUnit Wallet sürümünün cihazınızı desteklememesi mümkündür. Bazı durumlarda bu cihazla MonetaryUnit harcamak zor olabilir.\n\nBitcoinlerinizi güvenli bir yere aktarmanız tavsiye edilir.</string>
-	<string name="send_coins_activity_title">Bitcoin gönder</string>
+	<string name="wallet_old_sdk_dialog_message">Gelecek MonetaryUnit Wallet sürümünün cihazınızı desteklememesi mümkündür. Bazı durumlarda bu cihazla MonetaryUnit harcamak zor olabilir.\n\nMonetaryUnitlerinizi güvenli bir yere aktarmanız tavsiye edilir.</string>
+	<string name="send_coins_activity_title">MonetaryUnit gönder</string>
 	<string name="send_coins_fragment_request_payment_request_progress">%s unsurundan imza alınıyor…</string>
 	<string name="send_coins_fragment_request_payment_request_failed_title">İmza alımı başarısız oldu</string>
 	<string name="send_coins_fragment_request_payment_request_wrong_signature">Yanlış imza!</string>

@@ -51,7 +51,7 @@
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Descargar</string>
 	<string name="wallet_old_sdk_dialog_title">Versión de Android desactualizada</string>
-	<string name="wallet_old_sdk_dialog_message">Es muy posible que una próxima versión de MonetaryUnit Wallet ya no valga para su dispositivo. En tal caso, podría ser difícil gastar bitcoins en este dispositivo.\n\nA menos que domine lo que está haciendo, se le recomienda que transfiera sus bitcoins pronto.</string>
+	<string name="wallet_old_sdk_dialog_message">Es muy posible que una próxima versión de MonetaryUnit Wallet ya no valga para su dispositivo. En tal caso, podría ser difícil gastar MonetaryUnits en este dispositivo.\n\nA menos que domine lo que está haciendo, se le recomienda que transfiera sus MonetaryUnits pronto.</string>
 	<string name="send_coins_activity_title">Enviar MonetaryUnits</string>
 	<string name="send_coins_fragment_request_payment_request_progress">Adquiriendo firma de %s…</string>
 	<string name="send_coins_fragment_request_payment_request_failed_title">Ha fallado la adquisición de firma</string>
@@ -73,7 +73,7 @@
 	<string name="send_coins_fragment_direct_payment_failed_msg">Se reenviará tu pago a través de la red P2P.</string>
 	<string name="send_coins_fragment_button_send">Enviar</string>
 	<string name="send_coins_fragment_button_back">Atrás</string>
-	<string name="send_coins_fragment_insufficient_money_title">No hay suficientes bitcoins disponibles</string>
+	<string name="send_coins_fragment_insufficient_money_title">No hay suficientes MonetaryUnits disponibles</string>
 	<string name="send_coins_fragment_insufficient_money_msg1">Te faltan %s.</string>
 	<string name="send_coins_fragment_insufficient_money_msg2">¿Deseas pagar con todo lo que tienes?</string>
 	<string name="send_coins_preparation_msg">Firmando…</string>
@@ -110,7 +110,7 @@
 	<string name="address_book_options_paste_from_clipboard_invalid">No se reconocen los datos del portapapeles</string>
 	<string name="address_book_options_scan_title">Explorar dirección</string>
 	<string name="address_book_options_scan_invalid">No se reconocen los datos explorados</string>
-	<string name="address_book_row_message_compromised_key">Esta dirección puede haberse visto comprometida. Ya no la debería utilizar para recibir bitcoins.</string>
+	<string name="address_book_row_message_compromised_key">Esta dirección puede haberse visto comprometida. Ya no la debería utilizar para recibir MonetaryUnits.</string>
 	<string name="edit_address_book_entry_dialog_title_add">Añadir dirección</string>
 	<string name="edit_address_book_entry_dialog_title_edit">Editar dirección</string>
 	<string name="edit_address_book_entry_dialog_address_label">Dirección</string>

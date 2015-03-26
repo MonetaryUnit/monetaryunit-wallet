@@ -3,7 +3,7 @@ Nosite svoje novce vedno s seboj v žepu. Plačila so hitra, le prečitate QR-ko
 LASTNOSTI:
 
 • Potrebna ni nobena registracija, spletna storitev ali oblak! Ta denarnica deluje povsem decentralizirano in vrstniško.
-• Prikaz zneskov v DGC, mDGC ali µDGC.
+• Prikaz zneskov v MUE, mMUE ali µMUE.
 • Samodejna pretvorba v evre in druge lokalne valute.
 • Pošiljanje in prejemanje monetaryunitov prek NFC, QR-kod ali monetaryunit URL-jev.
 • Zasebni imenik monetaryunit naslovov.

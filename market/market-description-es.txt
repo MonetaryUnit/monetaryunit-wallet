@@ -3,7 +3,7 @@ Ten tus MonetaryUnits siempre contigo, en tu bolsillo! Paga rápidamente escanea
 CARACTERÍSTICAS:
 
 • ¡No requiere registro, servidor en la nube o servicio web! Este monedero es auténticamente entre pares (peer-to-peer).
-• Muestra la cantidad de MonetaryUnits en BTC y mBTC
+• Muestra la cantidad de MonetaryUnits en MUE y mMUE
 • Conversión a divisas nacionales.
 • Envío y recepción de MonetaryUnits vía NFC, códigos QR o URL de MonetaryUnit.
 • Libreta de direcciones para guardar las direcciones MonetaryUnit más utilizadas.

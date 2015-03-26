@@ -4,7 +4,7 @@ FEATURES:
 
 
 • Keine Registrierung, Web-Dienst oder Cloud nötig! Diese Wallet ist de-zentral und Peer to Peer.
-• Anzeige von Bitcoin-Werten in MUE und mMUE.
+• Anzeige von monetaryunit-Werten in MUE und mMUE.
 • Umrechnung von und zu den nationalen Währungen.
 • Senden und Empfangen von MonetaryUnit via NFC, QR-Codes oder MonetaryUnit URLs.
 • Adressbuch für regelmäßig genutzte Empfänger.

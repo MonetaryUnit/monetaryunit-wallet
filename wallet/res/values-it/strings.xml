@@ -52,7 +52,7 @@
 	<string name="wallet_version_dialog_button_binary">Scarica</string>
 	<string name="wallet_old_sdk_dialog_title">La versione Android non è aggiornata</string>
 
-	<string name="wallet_old_sdk_dialog_message">Ci sono possibilità che una delle prossime versioni di Bitcoin Wallet non supporterà più il tuo dispositivo. In alcuni casi, può essere difficile spendere denaro su questo dispositivo.\n\nA meno che tu sappia quello che stai facendo, è raccomandato di spostare il tuo denaro al più presto.</string>
+	<string name="wallet_old_sdk_dialog_message">Ci sono possibilità che una delle prossime versioni di MonetaryUnit Wallet non supporterà più il tuo dispositivo. In alcuni casi, può essere difficile spendere denaro su questo dispositivo.\n\nA meno che tu sappia quello che stai facendo, è raccomandato di spostare il tuo denaro al più presto.</string>
 	<string name="send_coins_activity_title">Invia MonetaryUnits</string>
 	<string name="send_coins_fragment_request_payment_request_progress">Acquisizione firma da %s…</string>
 	<string name="send_coins_fragment_request_payment_request_failed_title">Acquisizione firma fallita</string>
@@ -163,7 +163,7 @@
 	<string name="input_parser_io_error">Impossibile leggere i dati:\n%s</string>
 	<string name="input_parser_cannot_classify">Impossibile classificare ingresso:\n%s</string>
 	<string name="input_parser_invalid_bitcoin_uri">URI MonetaryUnit non valido:\n%s</string>
-	<string name="input_parser_invalid_address">Ricevuto indirizzo bitcoin non valido!\n(Hai mescolato Mainnet/Testnet?)</string>
+	<string name="input_parser_invalid_address">Ricevuto indirizzo MonetaryUnit non valido!\n(Hai mescolato Mainnet/Testnet?)</string>
 	<string name="input_parser_unverifyable_paymentrequest">Impossibile verificare la richiesta di pagamento:\n%s</string>
 	<string name="input_parser_invalid_paymentrequest">Richiesta di pagamento invalida:\n%s</string>
 

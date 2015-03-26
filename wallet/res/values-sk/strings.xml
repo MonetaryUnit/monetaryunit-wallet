@@ -71,9 +71,9 @@
 	<string name="send_coins_fragment_direct_payment_failed_msg">Platba bude odoslaná cez P2P sieť.</string>
 	<string name="send_coins_fragment_button_send">Odoslať</string>
 	<string name="send_coins_fragment_button_back">Späť</string>
-	<string name="send_coins_fragment_insufficient_money_title">Nedostatočné množstvo dostupných Bitcoinov</string>
+	<string name="send_coins_fragment_insufficient_money_title">Nedostatočné množstvo dostupných MonetaryUnitov</string>
 	<string name="send_coins_fragment_insufficient_money_msg1">Chýba %s.</string>
-	<string name="send_coins_fragment_insufficient_money_msg2">Chcete zaplatiť všetkými dostupnými Bitcoinmi?</string>
+	<string name="send_coins_fragment_insufficient_money_msg2">Chcete zaplatiť všetkými dostupnými MonetaryUnitmi?</string>
 	<string name="send_coins_preparation_msg">Pripravujem…</string>
 	<string name="send_coins_sending_msg">Odosielam…</string>
 	<string name="send_coins_sent_msg">Odoslané!</string>
@@ -105,7 +105,7 @@
 	<string name="address_book_options_paste_from_clipboard_invalid">Dáta zo schránky nebolo možné rozpoznať</string>
 	<string name="address_book_options_scan_title">Skenovať adresu</string>
 	<string name="address_book_options_scan_invalid">Skenované dáta nebolo možné rozpoznať</string>
-	<string name="address_book_row_message_compromised_key">Táto adresa môže byť ohrozená. Nemali by ste ju už používať na prijímanie Bitcoinov.</string>
+	<string name="address_book_row_message_compromised_key">Táto adresa môže byť ohrozená. Nemali by ste ju už používať na prijímanie MonetaryUnitov.</string>
 	<string name="edit_address_book_entry_dialog_title_add">Pridať adresu</string>
 	<string name="edit_address_book_entry_dialog_title_edit">Upraviť adresu</string>
 	<string name="edit_address_book_entry_dialog_address_label">Adresa</string>

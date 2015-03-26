@@ -4,7 +4,7 @@
 	<string name="toast_wallet_reset">Wallet is gereset,\nherstel zal enige tijd duren</string>
 	<string name="wallet_disclaimer_fragment_remind_safety">Gebruik op eigen risico. Lees de &lt;u&gt;veiligheids voorschriften&lt;/u&gt;.</string>
 	<string name="wallet_address_fragment_your">Uw MonetaryUnit Adres:</string>
-	<string name="wallet_address_fragment_clipboard_msg">Bitcoin adres gekopieërd naar klembord</string>
+	<string name="wallet_address_fragment_clipboard_msg">MonetaryUnit adres gekopieërd naar klembord</string>
 	<string name="wallet_addresses_fragment_add_dialog_title">Voeg MonetaryUnit Adres toe</string>
 	<string name="wallet_addresses_fragment_add_dialog_message">MonetaryUnit adres kan niet verwijderd worden. Wilt u een nieuw adres toevoeggen aan uw wallet?</string>
 	<string name="exchange_rates_fragment_empty_text">Kan geen wisselkoersen laden</string>
@@ -29,7 +29,7 @@
 	<string name="send_coins_fragment_amount_label">Bedrag te betalen</string>
 	<string name="send_coins_fragment_button_send">Verzenden</string>
 	<string name="send_coins_sending_msg">Bezig met verzenden…</string>
-	<string name="send_coins_error_msg">Probleem bij het versturen van Bitcoins!</string>
+	<string name="send_coins_error_msg">Probleem bij het versturen van MonetaryUnits!</string>
 	<string name="request_coins_activity_title">Verzoek MonetaryUnits</string>
 	<string name="request_coins_fragment_amount_label">Verzocht bedrag (optioneel)</string>
 	<string name="request_coins_fragment_initiate_request_qr">Laat deze code scannen door de zender.</string>

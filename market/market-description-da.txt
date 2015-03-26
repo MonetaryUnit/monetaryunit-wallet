@@ -3,7 +3,7 @@ Hav altid dine monetaryunits med dig i din lomme! Du betaler ved hurtigt at scan
 FUNKTIONER:
 
 • Ingen registrering, webservice eller sky behøves! Tegnebogen er decentraliseret og peer-to-peer.
-• Visning af monetaryunit-beløb i DGC, mDGC og µDGC.
+• Visning af monetaryunit-beløb i MUE, mMUE og µMUE.
 • Konvertering til og fra lokale valutaer.
 • Afsendelse og modtagelse af monetaryunit via NFC, QR-koder eller monetaryunit-URLer.
 • Adressebog til ofte brugte monetaryunit-adresser.
@@ -11,10 +11,10 @@ FUNKTIONER:
 • Systemnotifikation for modtagne mønter.
 • App-widget for monetaryunit-saldo.
 
-Du kan finde mere om Bitcoin på
+Du kan finde mere om monetaryunit på
 http://monetaryunit.org/
 
-Hvis du vil bidrage til Bitcoin Wallet, kan projektet findes på
+Hvis du vil bidrage til monetaryunit Wallet, kan projektet findes på
 https://github.com/MonetaryUnit
 
 

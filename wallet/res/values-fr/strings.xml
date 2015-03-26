@@ -206,7 +206,7 @@
 	<string name="about_title">À propos</string>
 
 	<string name="about_license_title">Licence</string>
-	<string name="about_credits_bitcoinj_title">Cette appli utilise quarkcoinj %s</string>
+	<string name="about_credits_bitcoinj_title">Cette appli utilise monetaryunitj %s</string>
 	<string name="about_credits_zxing_title">Cette appli utilise « zxing »</string>
 	<string name="about_credits_icon_title">Cette appli utilise une icône par « bitboy »</string>
 	<string name="about_community_googleplus_title">Communauté Google+</string>
@@ -232,8 +232,8 @@
 	<string name="button_share">Partager</string>
 
 	<string name="button_set_as_default">Définir par défaut</string>
-	<string name="button_request_coins">Demande de BTC</string>
-	<string name="button_send_coins">Envoi de BTC</string>
+	<string name="button_request_coins">Demande de MUE</string>
+	<string name="button_send_coins">Envoi de MUE</string>
 	<string name="button_scan">Numériser</string>
 	<string name="button_edit_address">Ajouter/modifier une adresse</string>
 	<string name="button_settings">Paramètres</string>

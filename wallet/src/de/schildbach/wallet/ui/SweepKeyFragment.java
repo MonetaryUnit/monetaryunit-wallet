@@ -99,8 +99,8 @@ public class SweepKeyFragment extends SherlockFragment {
 
     //chain urls
     private List<String> blockchainUrls = Arrays.asList(
-            "http://104.236.152.29/api/addr/%s/utxo",
-            "http://104.131.87.192:3000/api/addr/%s/utxo" //need an alternate
+            "https://muechain.info/api/addr/%s/utxo",
+            "https://muechain.info/api/addr/%s/utxo" //need an alternate
             //"https://chain.so/api/v2/lite/unspent/%s"
     );
 

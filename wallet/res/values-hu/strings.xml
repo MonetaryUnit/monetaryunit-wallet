@@ -28,7 +28,7 @@
 	<string name="wallet_transactions_fragment_tab_all">Mindkettő</string>
 	<string name="wallet_transactions_fragment_tab_sent">Küldött</string>
 	<string name="wallet_transactions_fragment_empty_text_received">Nem érkezett MonetaryUnit eddig.</string>
-	<string name="wallet_transactions_fragment_empty_text_sent">Bitcoin küldés nem történt eddig.</string>
+	<string name="wallet_transactions_fragment_empty_text_sent">MonetaryUnit küldés nem történt eddig.</string>
 	<string name="wallet_transactions_fragment_empty_text_howto">Hogy szerezz MonetaryUnit-t?\n\nVásárolj hagyományos pénzért,\nárusíts termékeket, kínálj szolgáltatásokat vagy\nkeress munkával.</string>
 	<string name="wallet_transactions_row_warning_backup">Gratulálunk, megérkezett az első kifizetésed! Ugye rendszeresen &lt;u&gt;elmented a tárcád&lt;/u&gt;, tartalmát, hogy biztonságban legyen?</string>
 	<string name="wallet_transactions_fragment_coinbase">bányászott</string>

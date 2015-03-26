@@ -2,7 +2,7 @@ MonetaryUnit'leriniz daima cebinizde sizinle olsun! Herhangi bir QR kodunu okuya
 
 İŞLEVLERİ:
 • Hiçbir oturuma, web ya da bulut hizmetine gerek yoktur. Bu cüzdan merkezsiz ve eşten eşedir.
-• MonetaryUnit meblağlarının BTC ve mBTC olarak gösterilmesi.
+• MonetaryUnit meblağlarının MUE ve mMUE olarak gösterilmesi.
 • Dövizlere ve dövizlerden dönüştürme.
 • NFC, QR kodu veya MonetaryUnit bağlantıları ile MonetaryUnit gönderir ve alır.
 • Sık kullanılan MonetaryUnit adresleri için adres defteri içerir.

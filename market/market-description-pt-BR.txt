@@ -3,7 +3,7 @@ Tenha os seus MonetaryUnits sempre com você, no seu bolso! Efetue pagamentos ra
 CARACTERÍSTICAS:
 
 • Sem necessidade de cadastro, serviço web ou hospedagem! Esta carteira é descentralizada e "peer to peer".
-• Exibe a quantidade de MonetaryUnits em BTC e mBTC.
+• Exibe a quantidade de MonetaryUnits em MUE e mMUE.
 • Conversão para moedas nacionais.
 • Envio e recebimento de MonetaryUnits via NFC, códigos QR ou endereços MonetaryUnit.
 • Catálogo para guardar os endereços mais utilizados.

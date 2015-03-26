@@ -3,7 +3,7 @@ Miej swoje MonetaryUnity zawsze w swojej kieszeni! Zapłacisz skanując kod QR. 
 WŁAŚCIWOŚCI:
 
 • Brak konieczności rejestracji, serwisu online lub chmury! Ten portfel używa zdecentralizowanej sieci peer-to-peer.
-• Wyświetl ilość kwotę w DGC i mDGC.
+• Wyświetl ilość kwotę w MUE i mMUE.
 • Zamiana z i na waluty narodowe
 • Wysyłąnie i odbieranie MonetaryUnit za pomocą NFC, kodów QR czy adresów MonetaryUnit URL.
 • Książka adresowa dla regularnie używanych adresów MonetaryUnit.

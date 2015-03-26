@@ -3,7 +3,7 @@ monetaryunity vždy so sebou vo svojom vrecku. Jednoduché a rýchle platby pomo
 FUNKCIE:
 
 • Nie je potrebná žiadna registrácia ani žiadny účet.
-• Zobrazenie zostatku monetaryunitov v DGC alebo mDGC.
+• Zobrazenie zostatku monetaryunitov v MUE alebo mMUE.
 • Prepočet hodnoty monetaryunitov do viacerých cudzích mien.
 • Posielanie a prijímanie monetaryunitov pomocou NFC, QR kódov alebo monetaryunit adries.
 • Adresár pre často používané monetaryunit adresy.
@@ -11,10 +11,10 @@ FUNKCIE:
 • Notifikácie v stavovej lište pri prijatí monetaryunitov.
 • Widget s celkovým zostatkom.
 
-Viac informácií o Bitcoine
+Viac informácií o monetaryunite
 http://monetaryunit.org/
 
-Ak chcete prispieť do projektu Bitcoin Wallet nájdete ho na adrese
+Ak chcete prispieť do projektu monetaryunit Wallet nájdete ho na adrese
 https://github.com/MonetaryUnit/monetaryunit-wallet
 
 
