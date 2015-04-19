@@ -5,8 +5,8 @@
 	package="ua.monetaryunit.wallet"
 
 	android:installLocation="internalOnly"
-	android:versionCode="10303"
-	android:versionName="0.3.03" >
+	android:versionCode="10304"
+	android:versionName="0.3.04" >
 
 
 

@@ -4,7 +4,7 @@
 	<PreferenceCategory android:title="@string/where_to_buy_title" >
         <Preference
             android:key="exchange_00"
-            android:summary="https://bleutrade.com/exchange/9237"
+            android:summary="https://bleutrade.com/exchange/MUE/BTC"
             android:title="bleutrade.com" />
         <Preference
             android:key="exchange_01"
@@ -18,6 +18,14 @@
             android:key="exchange_03"
             android:summary="https://askcoin.net/ref/3912"
             android:title="askcoin.net" />
+        <Preference
+            android:key="exchange_04"
+            android:summary="https://www.bittrex.com/Market/?MarketName=BTC-MUE"
+            android:title="bittrex.com" />
+        <Preference
+            android:key="exchange_05"
+            android:summary="https://www.banx.io/trade?c=MUE&amp;p=BTC"
+            android:title="banx.io" />
 <!--        <Preference
                 android:key="exchange_07"
                 android:summary="http://liliontransfer.org/?cms_www=deklaracja&amp;waluta_od=USD&amp;waluta_do=MUE"
