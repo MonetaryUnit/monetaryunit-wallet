@@ -70,7 +70,7 @@ import de.schildbach.wallet.util.Bluetooth;
 import de.schildbach.wallet.util.Nfc;
 import de.schildbach.wallet.util.PaymentProtocol;
 import de.schildbach.wallet.util.Qr;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 /**
  * @author Andreas Schildbach

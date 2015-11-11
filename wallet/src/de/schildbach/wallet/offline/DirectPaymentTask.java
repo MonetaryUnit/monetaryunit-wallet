@@ -42,7 +42,7 @@ import android.os.Looper;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.util.Bluetooth;
 import de.schildbach.wallet.util.PaymentProtocol;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 /**
  * @author Andreas Schildbach

@@ -68,7 +68,7 @@ import de.schildbach.wallet.service.BlockchainServiceImpl;
 import de.schildbach.wallet.util.CrashReporter;
 import de.schildbach.wallet.util.Io;
 import de.schildbach.wallet.util.LinuxSecureRandom;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 
 /**

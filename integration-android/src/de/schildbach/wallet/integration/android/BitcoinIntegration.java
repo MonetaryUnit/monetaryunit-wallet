@@ -269,9 +269,9 @@ public final class BitcoinIntegration
 
 	private static void redirectToDownload(final Context context)
 	{
-		Toast.makeText(context, "No MonetaryUnit application found.\nPlease install MonetaryUnit Wallet.", Toast.LENGTH_LONG).show();
+		Toast.makeText(context, "No MonetaryUnit testnet application found.\nPlease install MonetaryUnit testnet Wallet.", Toast.LENGTH_LONG).show();
 
-		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=ua.monetaryunit.wallet"));
+		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=ua.monetaryunit.wallet_test"));
 		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://monetaryunit.org"));
 
 

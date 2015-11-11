@@ -21,7 +21,7 @@ import android.os.Bundle;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.MenuItem;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 /**
  * @author Andreas Schildbach

@@ -57,7 +57,7 @@ import de.schildbach.wallet.ui.InputParser.StringInputParser;
 import de.schildbach.wallet.util.BitmapFragment;
 import de.schildbach.wallet.util.Qr;
 import de.schildbach.wallet.util.WalletUtils;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 /**
  * @author Andreas Schildbach

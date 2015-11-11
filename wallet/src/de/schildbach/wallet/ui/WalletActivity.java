@@ -81,7 +81,7 @@ import de.schildbach.wallet.util.Crypto;
 import de.schildbach.wallet.util.Iso8601Format;
 import de.schildbach.wallet.util.Nfc;
 import de.schildbach.wallet.util.WalletUtils;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 //import com.google.bitcoin.core.*;
 //import org.slf4j.Logger;

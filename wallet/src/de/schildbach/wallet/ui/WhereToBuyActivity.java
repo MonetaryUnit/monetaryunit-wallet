@@ -28,7 +28,7 @@ import com.actionbarsherlock.view.MenuItem;
 import com.google.bitcoin.core.VersionMessage;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 import java.io.IOException;
 import java.io.OutputStream;

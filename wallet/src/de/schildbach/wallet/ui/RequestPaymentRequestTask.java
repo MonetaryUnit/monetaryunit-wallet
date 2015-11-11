@@ -46,7 +46,7 @@ import com.google.protobuf.CodedOutputStream;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.PaymentIntent;
 import de.schildbach.wallet.util.Bluetooth;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 import de.schildbach.wallet.util.PaymentProtocol;
 
 /**

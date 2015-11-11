@@ -36,6 +36,8 @@ import com.google.bitcoin.core.Transaction;
 import com.google.bitcoin.core.VerificationException;
 import com.google.bitcoin.core.Wallet;
 
+import ua.monetaryunit.wallet_test.R;
+
 import de.schildbach.wallet.WalletApplication;
 
 /**

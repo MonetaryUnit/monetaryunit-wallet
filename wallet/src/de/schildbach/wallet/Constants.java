@@ -29,7 +29,7 @@ import com.google.bitcoin.params.TestNet3Params;
 import java.io.File;
 import java.nio.charset.Charset;
 
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 
 /**

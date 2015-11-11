@@ -27,7 +27,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import de.schildbach.wallet.ui.TransactionsListFragment.Direction;
 import de.schildbach.wallet.util.ViewPagerTabs;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 /**
  * @author Andreas Schildbach

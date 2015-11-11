@@ -2,7 +2,7 @@ package de.schildbach.wallet.ui;
 
 import android.widget.TextView;
 import de.schildbach.wallet.WalletApplication;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 
         import android.app.Activity;

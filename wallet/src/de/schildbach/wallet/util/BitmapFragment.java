@@ -28,7 +28,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 
 /**

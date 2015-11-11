@@ -9,7 +9,7 @@ import com.actionbarsherlock.view.MenuItem;
 import com.google.bitcoin.core.Address;
 import com.google.bitcoin.core.ECKey;
 import de.schildbach.wallet.PaymentIntent;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 import javax.annotation.Nonnull;
 

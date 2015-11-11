@@ -79,7 +79,7 @@ import de.schildbach.wallet.ui.WalletActivity;
 import de.schildbach.wallet.util.CrashReporter;
 import de.schildbach.wallet.util.GenericUtils;
 import de.schildbach.wallet.util.WalletUtils;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 import de.schildbach.wallet.util.ThrottlingWalletChangeListener;
 import org.litecoin.LitecoinPeerDBDiscovery;
 import com.google.bitcoin.net.discovery.IrcDiscovery;

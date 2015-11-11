@@ -14,7 +14,7 @@ import android.view.Surface;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnErrorListener;

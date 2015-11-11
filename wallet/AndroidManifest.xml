@@ -2,7 +2,7 @@
 <!-- Need to update this for the coin -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="ua.monetaryunit.wallet"
+	package="ua.monetaryunit.wallet_test"
 
 	android:installLocation="internalOnly"
 	android:versionCode="10305"
@@ -235,12 +235,12 @@
 
 		<provider
 			android:name="de.schildbach.wallet.AddressBookProvider"
-			android:authorities="ua.monetaryunit.wallet.address_book"
+			android:authorities="ua.monetaryunit.wallet_test.address_book"
 			android:exported="false" />
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.ExchangeRatesProvider"
-			android:authorities="ua.monetaryunit.wallet.exchange_rates"
+			android:authorities="ua.monetaryunit.wallet_test.exchange_rates"
 			android:exported="false" />
 
 		<receiver

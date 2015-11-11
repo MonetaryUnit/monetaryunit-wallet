@@ -64,7 +64,7 @@ import de.schildbach.wallet.sweep.SweepHelper;
 import de.schildbach.wallet.sweep.UnspentOutput;
 import de.schildbach.wallet.util.GenericUtils;
 import de.schildbach.wallet.util.Io;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 
 /**
  * @author Maximilian Keller

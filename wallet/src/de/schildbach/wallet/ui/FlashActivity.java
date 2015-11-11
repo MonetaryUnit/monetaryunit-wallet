@@ -11,7 +11,7 @@ import android.os.Handler;
 import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebSettings.PluginState;
-import ua.monetaryunit.wallet.R;
+import ua.monetaryunit.wallet_test.R;
 import de.schildbach.wallet.ui.WalletActivity;
 
 public class FlashActivity extends Activity {
