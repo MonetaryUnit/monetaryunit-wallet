@@ -103,7 +103,7 @@ public class Configuration
 	{
 		final int shift = getBtcShift();
 		if (shift == 0)
-			return Coin.COIN;
+			return Coin.MILLICOIN;
 		else if (shift == 3)
 			return Coin.MILLICOIN;
 		else if (shift == 6)

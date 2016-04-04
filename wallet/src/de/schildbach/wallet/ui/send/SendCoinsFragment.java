@@ -470,7 +470,7 @@ public final class SendCoinsFragment extends Fragment
 			final String mimeType = intent.getType();
 
 			if ((Intent.ACTION_VIEW.equals(action) || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action)) && intentUri != null
-					&& "bitcoin".equals(scheme))
+					&& "monetaryunit".equals(scheme))
 			{
 				initStateFromBitcoinUri(intentUri);
 			}
@@ -1087,6 +1087,7 @@ public final class SendCoinsFragment extends Fragment
 	private void handleEmpty()
 	{
 		final Coin available = wallet.getBalance(BalanceType.AVAILABLE);
+		log.warn("available {}", available);
 		amountCalculatorLink.setBtcAmount(available);
 
 		updateView();

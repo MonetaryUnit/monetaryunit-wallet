@@ -32,7 +32,7 @@ public final class BitcoinIntegration
 	private static final String INTENT_EXTRA_PAYMENT = "payment";
 	private static final String INTENT_EXTRA_TRANSACTION_HASH = "transaction_hash";
 
-	private static final String MIMETYPE_PAYMENTREQUEST = "application/bitcoin-paymentrequest"; // BIP 71
+	private static final String MIMETYPE_PAYMENTREQUEST = "application/monetaryunit-paymentrequest"; // BIP 71
 
 	/**
 	 * Request any amount of Bitcoins (probably a donation) from user, without feedback from the app.
@@ -225,15 +225,15 @@ public final class BitcoinIntegration
 		return txHash;
 	}
 
-	private static final int SATOSHIS_PER_COIN = 100000000;
+	private static final int SATOSHIS_PER_COIN = 100000;
 
 	private static Intent makeBitcoinUriIntent(final String address, final Long amount)
 	{
-		final StringBuilder uri = new StringBuilder("bitcoin:");
+		final StringBuilder uri = new StringBuilder("monetaryunit:");
 		if (address != null)
 			uri.append(address);
 		if (amount != null)
-			uri.append("?amount=").append(String.format("%d.%08d", amount / SATOSHIS_PER_COIN, amount % SATOSHIS_PER_COIN));
+			uri.append("?amount=").append(String.format("%d.%05d", amount / SATOSHIS_PER_COIN, amount % SATOSHIS_PER_COIN));
 
 		final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri.toString()));
 
@@ -269,10 +269,10 @@ public final class BitcoinIntegration
 
 	private static void redirectToDownload(final Context context)
 	{
-		Toast.makeText(context, "No Bitcoin application found.\nPlease install Bitcoin Wallet.", Toast.LENGTH_LONG).show();
+		Toast.makeText(context, "No MonetaryUnit application found.\nPlease install MonetaryUnit Wallet.", Toast.LENGTH_LONG).show();
 
-		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=de.schildbach.wallet"));
-		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/bitcoin-wallet/bitcoin-wallet/releases"));
+		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=ua.monetaryunit.wallet"));
+		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/MonetaryUnit/monetaryunit-wallet/releases"));
 
 		final PackageManager pm = context.getPackageManager();
 		if (pm.resolveActivity(marketIntent, 0) != null)

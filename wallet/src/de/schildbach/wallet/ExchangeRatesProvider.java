@@ -108,7 +108,7 @@ public class ExchangeRatesProvider extends ContentProvider
 	private static final String[] BITCOINAVERAGE_FIELDS = new String[] { "24h_avg", "last" };
 	private static final String BITCOINAVERAGE_SOURCE = "BitcoinAverage.com";
 	private static final URL BLOCKCHAININFO_URL;
-	private static final String[] BLOCKCHAININFO_FIELDS = new String[] { "15m" };
+	private static final String[] BLOCKCHAININFO_FIELDS = new String[] { "24h_avg", "last" };
 	private static final String BLOCKCHAININFO_SOURCE = "blockchain.info";
 
 	// https://bitmarket.eu/api/ticker
@@ -117,8 +117,8 @@ public class ExchangeRatesProvider extends ContentProvider
 	{
 		try
 		{
-			BITCOINAVERAGE_URL = new URL("https://api.bitcoinaverage.com/custom/abw");
-			BLOCKCHAININFO_URL = new URL("https://blockchain.info/ticker");
+			BITCOINAVERAGE_URL = new URL("https://ratesrv.muewallet.com/rates");
+			BLOCKCHAININFO_URL = new URL("https://ratesrv.muewallet.com/rates"); // TODO: Create backup
 		}
 		catch (final MalformedURLException x)
 		{

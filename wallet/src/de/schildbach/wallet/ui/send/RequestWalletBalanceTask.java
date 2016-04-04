@@ -86,13 +86,12 @@ public final class RequestWalletBalanceTask
 			@Override
 			public void run()
 			{
-				final StringBuilder url = new StringBuilder(Constants.BITEASY_API_URL);
-				url.append("outputs");
-				url.append("?per_page=MAX");
-				url.append("&operator=AND");
-				url.append("&spent_state=UNSPENT");
+				final StringBuilder url = new StringBuilder(Constants.BITEASY_API_URL); // https://chain.muewallet.com/api/addr/%s/utxo
+				url.append("api");
+				url.append("/addr/");
 				for (final Address address : addresses)
-					url.append("&address[]=").append(address.toString());
+					url.append(address.toString()); // .append(",nextaddress"); doesn't work
+				url.append("/utxo");
 
 				log.debug("trying to request wallet balance from {}", url);
 
@@ -122,20 +121,20 @@ public final class RequestWalletBalanceTask
 						final StringBuilder content = new StringBuilder();
 						Io.copy(reader, content);
 
-						final JSONObject json = new JSONObject(content.toString());
+						final JSONArray jsonOutputs = new JSONArray(content.toString());
 
-						final int status = json.getInt("status");
-						if (status != 200)
-							throw new IOException("api status " + status + " when fetching unspent outputs");
+						// final int status = json.getInt("status");
+						// if (status != 200)
+						// 	throw new IOException("api status " + status + " when fetching unspent outputs");
 
-						final JSONObject jsonData = json.getJSONObject("data");
+						//final JSONObject jsonData = json.getJSONObject("data");
 
-						final JSONObject jsonPagination = jsonData.getJSONObject("pagination");
+						// final JSONObject jsonPagination = jsonData.getJSONObject("pagination");
+						//
+						// if (!"false".equals(jsonPagination.getString("next_page")))
+						// 	throw new IOException("result set too big");
 
-						if (!"false".equals(jsonPagination.getString("next_page")))
-							throw new IOException("result set too big");
-
-						final JSONArray jsonOutputs = jsonData.getJSONArray("outputs");
+						//final JSONObject jsonOutputs = json.getJSONObject(json); //jsonData.getJSONArray("outputs");
 
 						final Map<Sha256Hash, Transaction> transactions = new HashMap<Sha256Hash, Transaction>(jsonOutputs.length());
 
@@ -143,10 +142,10 @@ public final class RequestWalletBalanceTask
 						{
 							final JSONObject jsonOutput = jsonOutputs.getJSONObject(i);
 
-							final Sha256Hash uxtoHash = Sha256Hash.wrap(jsonOutput.getString("transaction_hash"));
-							final int uxtoIndex = jsonOutput.getInt("transaction_index");
-							final byte[] uxtoScriptBytes = Constants.HEX.decode(jsonOutput.getString("script_pub_key"));
-							final Coin uxtoValue = Coin.valueOf(Long.parseLong(jsonOutput.getString("value")));
+							final Sha256Hash uxtoHash = Sha256Hash.wrap(jsonOutput.getString("txid"));
+							final int uxtoIndex = jsonOutput.getInt("vout");
+							final byte[] uxtoScriptBytes = Constants.HEX.decode(jsonOutput.getString("scriptPubKey"));
+							final Coin uxtoValue = Coin.parseCoin(jsonOutput.getString("amount")).divide(1000);
 
 							Transaction tx = transactions.get(uxtoHash);
 							if (tx == null)
