@@ -13,10 +13,10 @@
 		<item>@string/preferences_precision_labels_2_3</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_values">
-		<item>https://www.bittrex.com/</item>
+		<item>https://chain.muewallet.com/</item>
 	</string-array>
 	<string-array name="preferences_block_explorer_labels">
-		<item>Bittrex</item>
+		<item>MonetaryUnit Explorer</item>
 	</string-array>
 
 </resources>
