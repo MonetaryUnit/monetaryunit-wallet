@@ -47,7 +47,7 @@ import de.schildbach.wallet.ui.WalletActivity;
 import de.schildbach.wallet.ui.send.SendCoinsActivity;
 import de.schildbach.wallet.util.GenericUtils;
 import de.schildbach.wallet.util.MonetarySpannable;
-import de.schildbach.wallet.R;
+import ua.monetaryunit.wallet.R;
 
 /**
  * @author Andreas Schildbach

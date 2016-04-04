@@ -58,7 +58,7 @@ import de.schildbach.wallet.util.Qr;
 import de.schildbach.wallet.util.Toast;
 import de.schildbach.wallet.util.WalletUtils;
 import de.schildbach.wallet.util.WholeStringBuilder;
-import de.schildbach.wallet.R;
+import ua.monetaryunit.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -229,7 +229,7 @@ public final class WalletAddressesFragment extends FancyListFragment
 
 			private void handleCopyToClipboard(final Address address)
 			{
-				clipboardManager.setPrimaryClip(ClipData.newPlainText("Bitcoin address", address.toString()));
+				clipboardManager.setPrimaryClip(ClipData.newPlainText("MonetaryUnit address", address.toString()));
 				log.info("wallet address copied to clipboard: {}", address.toString());
 				new Toast(activity).toast(R.string.wallet_address_fragment_clipboard_msg);
 			}

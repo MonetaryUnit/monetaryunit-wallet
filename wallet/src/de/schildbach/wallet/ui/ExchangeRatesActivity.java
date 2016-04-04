@@ -19,7 +19,7 @@ package de.schildbach.wallet.ui;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import de.schildbach.wallet.R;
+import ua.monetaryunit.wallet.R;
 
 /**
  * @author Andreas Schildbach

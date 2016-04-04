@@ -116,7 +116,7 @@ import de.schildbach.wallet.ui.TransactionsAdapter;
 import de.schildbach.wallet.util.Bluetooth;
 import de.schildbach.wallet.util.Nfc;
 import de.schildbach.wallet.util.WalletUtils;
-import de.schildbach.wallet.R;
+import ua.monetaryunit.wallet.R;
 
 /**
  * @author Andreas Schildbach

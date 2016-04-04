@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="de.schildbach.wallet"
+	package="ua.monetaryunit.wallet"
 	android:installLocation="internalOnly"
 	android:versionCode="239"
 	android:versionName="4.49" >
@@ -183,21 +183,21 @@
 
 		<provider
 			android:name="de.schildbach.wallet.AddressBookProvider"
-			android:authorities="de.schildbach.wallet.address_book"
+			android:authorities="ua.monetaryunit.wallet.address_book"
 			android:exported="false" />
 		<provider
 			android:name="de.schildbach.wallet.ExchangeRatesProvider"
-			android:authorities="de.schildbach.wallet.exchange_rates"
+			android:authorities="ua.monetaryunit.wallet.exchange_rates"
 			android:exported="false" />
 		<provider
 			android:name="de.schildbach.wallet.FileAttachmentProvider"
-			android:authorities="de.schildbach.wallet.file_attachment"
+			android:authorities="ua.monetaryunit.wallet.file_attachment"
 			android:exported="false"
 			android:grantUriPermissions="true" />
 
 		<receiver
 			android:name="de.schildbach.wallet.WalletBalanceWidgetProvider"
-			android:label="Bitcoin Wallet Balance" >
+			android:label="MonetaryUnit Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>

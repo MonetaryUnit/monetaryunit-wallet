@@ -66,7 +66,7 @@ import de.schildbach.wallet.util.Qr;
 import de.schildbach.wallet.util.Toast;
 import de.schildbach.wallet.util.WalletUtils;
 import de.schildbach.wallet.util.WholeStringBuilder;
-import de.schildbach.wallet.R;
+import ua.monetaryunit.wallet.R;
 
 /**
  * @author Andreas Schildbach
@@ -376,7 +376,7 @@ public final class SendingAddressesFragment extends FancyListFragment implements
 
 	private void handleCopyToClipboard(final String address)
 	{
-		clipboardManager.setPrimaryClip(ClipData.newPlainText("Bitcoin address", address));
+		clipboardManager.setPrimaryClip(ClipData.newPlainText("MonetaryUnit address", address));
 		log.info("sending address copied to clipboard: {}", address.toString());
 		new Toast(activity).toast(R.string.wallet_address_fragment_clipboard_msg);
 	}

@@ -20,7 +20,7 @@ package de.schildbach.wallet.ui.preference;
 import java.util.List;
 
 import android.view.MenuItem;
-import de.schildbach.wallet.R;
+import ua.monetaryunit.wallet.R;
 
 /**
  * @author Andreas Schildbach
