@@ -68,7 +68,7 @@ public class Configuration
 	public static final String PREFS_KEY_REMIND_BACKUP = "remind_backup";
 	private static final String PREFS_KEY_LAST_BACKUP = "last_backup";
 
-	private static final int PREFS_DEFAULT_BTC_SHIFT = 3;
+	private static final int PREFS_DEFAULT_BTC_SHIFT = 0;
 	private static final int PREFS_DEFAULT_BTC_PRECISION = 2;
 
 	private static final Logger log = LoggerFactory.getLogger(Configuration.class);
@@ -103,7 +103,7 @@ public class Configuration
 	{
 		final int shift = getBtcShift();
 		if (shift == 0)
-			return Coin.MILLICOIN;
+			return Coin.COIN;
 		else if (shift == 3)
 			return Coin.MILLICOIN;
 		else if (shift == 6)
@@ -114,21 +114,12 @@ public class Configuration
 
 	public MonetaryFormat getFormat()
 	{
-		final int shift = getBtcShift();
-		final int minPrecision = shift <= 3 ? 2 : 0;
-		final int decimalRepetitions = (getBtcPrecision() - minPrecision) / 2;
-		return new MonetaryFormat().shift(shift).minDecimals(minPrecision).repeatOptionalDecimals(2, decimalRepetitions);
+		return new MonetaryFormat().shift(0).minDecimals(2).optionalDecimals(3);
 	}
 
 	public MonetaryFormat getMaxPrecisionFormat()
 	{
-		final int shift = getBtcShift();
-		if (shift == 0)
-			return new MonetaryFormat().shift(0).minDecimals(2).optionalDecimals(2, 2, 2);
-		else if (shift == 3)
-			return new MonetaryFormat().shift(3).minDecimals(2).optionalDecimals(2, 1);
-		else
-			return new MonetaryFormat().shift(6).minDecimals(0).optionalDecimals(2);
+		return new MonetaryFormat().shift(0).minDecimals(2).optionalDecimals(3);
 	}
 
 	public String getOwnName()
