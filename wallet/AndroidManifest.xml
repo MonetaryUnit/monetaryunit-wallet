@@ -3,8 +3,8 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	package="ua.monetaryunit.wallet"
 	android:installLocation="internalOnly"
-	android:versionCode="10404"
-	android:versionName="0.4.04" >
+	android:versionCode="10405"
+	android:versionName="0.4.05" >
 
 	<uses-sdk
 		android:minSdkVersion="15"
