@@ -38,9 +38,11 @@ import org.bitcoinj.core.VersionedChecksummedBytes;
 import org.bitcoinj.core.Wallet;
 import org.bitcoinj.core.Wallet.BalanceType;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.DialogInterface.OnClickListener;
@@ -56,6 +58,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
 import android.text.format.DateUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -103,6 +106,17 @@ public final class WalletActivity extends AbstractWalletActivity
 
 	private static final int REQUEST_CODE_SCAN = 0;
 
+	public static boolean hasPermissions(Context context, String... permissions) {
+		if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
+			for (String permission : permissions) {
+				if (ActivityCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
 	{
@@ -116,7 +130,17 @@ public final class WalletActivity extends AbstractWalletActivity
 
 		if (savedInstanceState == null)
 			checkAlerts();
+		String[] PERMISSIONS = {
+				Manifest.permission.WRITE_EXTERNAL_STORAGE,
+				Manifest.permission.RECEIVE_BOOT_COMPLETED,
+				Manifest.permission.NFC, Manifest.permission.BLUETOOTH,
+				Manifest.permission.CAMERA, Manifest.permission.INTERNET,
+				Manifest.permission.VIBRATE, Manifest.permission.WAKE_LOCK,
+		};
 
+		if(!hasPermissions(this, PERMISSIONS)){
+			ActivityCompat.requestPermissions(this, PERMISSIONS, 1);
+		}
 		config.touchLastUsed();
 
 		handleIntent(getIntent());
