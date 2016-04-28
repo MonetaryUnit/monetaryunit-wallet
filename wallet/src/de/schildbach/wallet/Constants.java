@@ -106,7 +106,8 @@ public final class Constants
 	public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
 
 	/** Donation address for tip/donate action. */
-	public static final String DONATION_ADDRESS = "7RwKnamgcSCzy3RxYeSqHhD2TNADW7a4cZ";
+	public static final String DONATION_ADDRESS = NETWORK_PARAMETERS.getId().equals(NetworkParameters.ID_MAINNET)
+			? "7RwKnamgcSCzy3RxYeSqHhD2TNADW7a4cZ" : null;
 
 	/** Recipient e-mail address for reports. */
 	public static final String REPORT_EMAIL = "upgradeadvice@gmail.com";
@@ -142,6 +143,7 @@ public final class Constants
 
 	public static final long LAST_USAGE_THRESHOLD_JUST_MS = DateUtils.HOUR_IN_MILLIS;
 	public static final long LAST_USAGE_THRESHOLD_RECENTLY_MS = 2 * DateUtils.DAY_IN_MILLIS;
+	public static final long LAST_USAGE_THRESHOLD_INACTIVE_MS = 4 * DateUtils.WEEK_IN_MILLIS;
 
 	public static final int SDK_DEPRECATED_BELOW = Build.VERSION_CODES.ICE_CREAM_SANDWICH;
 
@@ -149,4 +151,8 @@ public final class Constants
 			&& Build.VERSION.RELEASE.startsWith("4.1.1");
 
 	public static final int MEMORY_CLASS_LOWEND = 48;
+
+	public static final int NOTIFICATION_ID_CONNECTED = 0;
+	public static final int NOTIFICATION_ID_COINS_RECEIVED = 1;
+	public static final int NOTIFICATION_ID_INACTIVITY = 2;
 }

@@ -3,8 +3,8 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	package="ua.monetaryunit.wallet"
 	android:installLocation="internalOnly"
-	android:versionCode="10405"
-	android:versionName="0.4.05" >
+	android:versionCode="10406"
+	android:versionName="0.4.06" >
 
 	<uses-sdk
 		android:minSdkVersion="15"
@@ -214,7 +214,7 @@
 			android:name="de.schildbach.wallet.offline.AcceptBluetoothService"
 			android:exported="false" />
 
-		<receiver android:name="de.schildbach.wallet.service.AutosyncReceiver" >
+		<receiver android:name="de.schildbach.wallet.service.BootstrapReceiver" >
 			<intent-filter>
 				<action android:name="android.intent.action.BOOT_COMPLETED" />
 			</intent-filter>
@@ -225,6 +225,10 @@
 
 		<service
 			android:name="de.schildbach.wallet.service.UpgradeWalletService"
+			android:exported="false" />
+
+		<service
+			android:name="de.schildbach.wallet.service.InactivityNotificationService"
 			android:exported="false" />
 
 		<meta-data
